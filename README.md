@@ -25,7 +25,7 @@ EXPO_PUBLIC_FIREBASE_APP_ID=YOUR_APP_ID
 EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID=YOUR_MEASUREMENT_ID
 ```
 
-7. (Optional) Install the **Expo Go** app on your phone to run it via QR code.
+7. Install the **Expo Go** app on your phone to run it via QR code.
 8. Start the application:
 
 ```bash

@@ -32,7 +32,7 @@ export default function Login() {
   const router = useRouter();
 
   const openInstagram = async () => {
-    const url = "https://www.instagram.com/arcan_studio_tattoo/";
+    const url = "";
     await Linking.openURL(url);
   };
 

@@ -3,7 +3,7 @@ Application developed with React and user authentication, built to meet the need
 
 ## How to Run
 
-1. Clone this repository (or extract `project-n-main.zip`).
+1. Clone this repository (or extract `dotnotes-auth-app-main.zip`).
 2. Make sure Node.js (v18+) is installed.
 3. Open a terminal in the project root (where `package.json` is).
 4. Install dependencies:

@@ -1,10 +1,18 @@
-// https://docs.expo.dev/guides/using-eslint/
-const { defineConfig } = require('eslint/config');
-const expoConfig = require('eslint-config-expo/flat');
+module.exports = function(api) {
+  api.cache(true);
 
-module.exports = defineConfig([
-  expoConfig,
-  {
-    ignores: ['dist/*'],
-  },
-]);
+  return {
+    presets: ["babel-preset-expo"],
+    plugins: [
+      [
+        "module-resolver",
+        {
+          alias: {
+            "@": "./src",
+          },
+        },
+      ],
+      "expo-router/babel",
+    ],
+  };
+};

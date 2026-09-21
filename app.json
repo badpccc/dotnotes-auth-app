@@ -1,18 +1,32 @@
-module.exports = function(api) {
-  api.cache(true);
-
-  return {
-    presets: ["babel-preset-expo"],
-    plugins: [
-      [
-        "module-resolver",
-        {
-          alias: {
-            "@": "./src",
-          },
-        },
-      ],
-      "expo-router/babel",
+{
+  "expo": {
+    "name": "project-n",
+    "slug": "project-n",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "projectn",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "softwareKeyboardLayoutMode": "resize"
+    },
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser",
+      "expo-sqlite"
     ],
-  };
-};
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
